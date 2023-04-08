@@ -1,3 +1,13 @@
+.text-tickets {
+    color: #71dab2;
+}
+
+#header img {
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 }
