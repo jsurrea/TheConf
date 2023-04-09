@@ -18,7 +18,7 @@ Feel free to use this repo as a template for similar projects, or contribute wit
 
 ## Mobile version
 
-![Mobile-1](https://user-images.githubusercontent.com/68788933/230756574-e735683b-9b2a-4da8-b4d9-e1fd6bf38971.png)
+![Mobile-1](https://user-images.githubusercontent.com/68788933/230756757-7875e047-a333-4b7e-a2fe-3774d23a38a8.png)
 ![Mobile-2](https://user-images.githubusercontent.com/68788933/230756657-3d4e4ab7-d71a-4b42-aa99-46df2610b43b.png)
 ![Mobile-3](https://user-images.githubusercontent.com/68788933/230756659-1ae0be34-6ec2-46b1-bf0f-570b84de7a26.png)
 ![Mobile-4](https://user-images.githubusercontent.com/68788933/230756674-7e024320-40a3-4504-b7cb-0fd856ac3e81.png)
