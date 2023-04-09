@@ -15,10 +15,14 @@
   </head>
   <body>
     <!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav
+      id="header"
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/TheConfLogo.png" alt="TheConf Logo">
+          <img src="assets/images/TheConfLogo.png" alt="TheConf Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -34,49 +38,246 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">The Event</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >The Event</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">The Speakers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">The Place</a>
+              <a class="nav-link" href="#">The Place</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Join as a speaker</a>
+              <a class="nav-link" href="#">Join as a speaker</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-tickets" href="#">Buy Tickets</a>
+              <a class="nav-link text-tickets" href="#">Buy Tickets</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- /Header -->
+
+    <!-- Main -->
+    <section id="main">
+      <div
+        id="carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-pause="“false”"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/hawaii.jpeg"
+              class="d-block w-100"
+              alt="hawaii"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/hawaii2.jpeg"
+              class="d-block w-100"
+              alt="hawaii2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/hawaii3.jpeg"
+              class="d-block w-100"
+              alt="hawaii3"
+            />
+          </div>
+        </div>
+        <div class="overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 offset-md-6 text-center text-md-end">
+                <h1>TheConf Hawaii</h1>
+                <p class="d-none d-md-block">
+                For the first time ever, TheConf is coming to Hawaii. An event to share knowledge and experience with our community. Come to meet members from TheConf team and other bright minds from around the world. Join us for a transformative experience that will leave you inspired and energized!
+                </p>
+                <a href="#" class="btn btn-outline-light"
+                  >I want to be Speaker</a
+                >
+                <button type="button" class="btn btn-primary btn-tickets">
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Main -->
+
+    <!-- Speakers -->
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Meet the</small>
+            <h2>Speakers</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/speakers/steve-jobs.jpeg"
+                class="card-img-top"
+                alt="Steve Jobs"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-0">Steve Jobs</h5>
+                <div class="badges mb-2">
+                    <span class="badge text-bg-light">Apple</span>
+                </div>
+                <p class="card-text">
+                  Co-founder of Apple, one of the world's most valuable and
+                  innovative technology companies. Jobs was a pioneer in the
+                  personal computer industry and is widely recognized for his
+                  design and marketing genius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/speakers/bill-gates.jpeg"
+                class="card-img-top"
+                alt="Bill Gates"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-0">Bill Gates</h5>
+                <div class="badges mb-2">
+                    <span class="badge text-bg-success">Microsoft</span>
+                </div>
+                <p class="card-text">
+                  Co-founder of Microsoft, one of the world's largest software
+                  companies. Gates is also known for his philanthropic efforts,
+                  including the Bill and Melinda Gates Foundation, which focuses
+                  on global health and education initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/speakers/larry-page.webp"
+                class="card-img-top"
+                alt="Larry Page"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-0">Larry Page</h5>
+                <div class="badges mb-2">
+                    <span class="badge text-bg-primary">Google</span>
+                </div>
+                <p class="card-text">
+                  Co-founder of Google, one of the world's most widely used
+                  search engines. Page is a tech entrepreneur and philanthropist
+                  who has also founded companies such as Alphabet Inc. and
+                  Google X, which focus on innovative projects such as
+                  self-driving cars and healthcare technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/speakers/mark-zuckerberg.jpeg"
+                class="card-img-top"
+                alt="Mark Zuckerberg"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-0">Mark Zuckerberg</h5>
+                <div class="badges mb-2">
+                    <span class="badge text-bg-info">Meta</span>
+                </div>
+                <p class="card-text">
+                  Co-founder and CEO of Facebook, the world's largest social
+                  media platform. Zuckerberg is known for his entrepreneurial
+                  spirit and his vision of connecting people through technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/speakers/elon-musk.jpeg"
+                class="card-img-top"
+                alt="Elon Musk"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-0">Elon Musk</h5>
+                <div class="badges mb-2">
+                    <span class="badge text-bg-danger">Tesla</span>
+                </div>
+                <p class="card-text">
+                  Founder and CEO of Tesla, Inc., SpaceX, Neuralink, and The
+                  Boring Company. Musk is a pioneer in the fields of electric
+                  cars, space exploration, and renewable energy, and has been
+                  named one of the most influential people in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/speakers/jeff-bezos.jpeg"
+                class="card-img-top"
+                alt="Jeff Bezos"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-0">Jeff Bezos</h5>
+                <div class="badges mb-2">
+                    <span class="badge text-bg-warning">Amazon</span>
+                </div>
+                <p class="card-text">
+                  Founder and former CEO of Amazon, the world's largest online
+                  retailer. Bezos is a visionary leader who has transformed the
+                  retail industry and is also known for his space exploration
+                  company, Blue Origin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Speakers -->
+
     <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
         <div class="row text-center">
           <div class="col-12 col-lg">
-            <a href="http://">FAQ</a>
+            <a href="#">About TheConf</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="http://">Contact us</a>
+            <a href="#">Schedule</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="http://">Media</a>
+            <a href="#">Sponsors</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="http://">Conferences</a>
+            <a href="#">Social Media</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="http://">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="http://">Privacy</a>
+            <a href="#">Privacy Policy</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="http://">Speakers</a>
+            <a href="#">Terms & Conditions</a>
           </div>
         </div>
       </div>
