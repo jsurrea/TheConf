@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="index.css" />
     <title>TheConf 2023</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Header -->
     <nav
       id="header"
-      class="navbar navbar-expand-lg bg-body-tertiary"
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top"
       data-bs-theme="dark"
     >
       <div class="container">
@@ -28,28 +28,26 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >The Event</a
-              >
+              <a class="nav-link" aria-current="page" href="#main">The Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">The Speakers</a>
+              <a class="nav-link" href="#speakers">The Speakers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">The Place</a>
+              <a class="nav-link" href="#place-time">The Place</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Join as a speaker</a>
+              <a class="nav-link" href="#join-speaker">Join as a speaker</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-tickets" href="#">Buy Tickets</a>
@@ -97,7 +95,11 @@
               <div class="col-md-6 offset-md-6 text-center text-md-end">
                 <h1>TheConf Hawaii</h1>
                 <p class="d-none d-md-block">
-                For the first time ever, TheConf is coming to Hawaii. An event to share knowledge and experience with our community. Come to meet members from TheConf team and other bright minds from around the world. Join us for a transformative experience that will leave you inspired and energized!
+                  For the first time ever, TheConf is coming to Hawaii. An event
+                  to share knowledge and experience with our community. Come to
+                  meet members from TheConf team and other bright minds from
+                  around the world. Join us for a transformative experience that
+                  will leave you inspired and energized!
                 </p>
                 <a href="#" class="btn btn-outline-light"
                   >I want to be Speaker</a
@@ -133,7 +135,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-0">Steve Jobs</h5>
                 <div class="badges mb-2">
-                    <span class="badge text-bg-dark">Apple</span>
+                  <span class="badge text-bg-dark">Apple</span>
                 </div>
                 <p class="card-text">
                   Co-founder of Apple, one of the world's most valuable and
@@ -154,7 +156,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-0">Bill Gates</h5>
                 <div class="badges mb-2">
-                    <span class="badge text-bg-success">Microsoft</span>
+                  <span class="badge text-bg-success">Microsoft</span>
                 </div>
                 <p class="card-text">
                   Co-founder of Microsoft, one of the world's largest software
@@ -175,7 +177,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-0">Larry Page</h5>
                 <div class="badges mb-2">
-                    <span class="badge text-bg-primary">Google</span>
+                  <span class="badge text-bg-primary">Google</span>
                 </div>
                 <p class="card-text">
                   Co-founder of Google, one of the world's most widely used
@@ -197,7 +199,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-0">Mark Zuckerberg</h5>
                 <div class="badges mb-2">
-                    <span class="badge text-bg-info">Meta</span>
+                  <span class="badge text-bg-info">Meta</span>
                 </div>
                 <p class="card-text">
                   Co-founder and CEO of Facebook, the world's largest social
@@ -217,7 +219,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-0">Elon Musk</h5>
                 <div class="badges mb-2">
-                    <span class="badge text-bg-danger">Tesla</span>
+                  <span class="badge text-bg-danger">Tesla</span>
                 </div>
                 <p class="card-text">
                   Founder and CEO of Tesla, Inc., SpaceX, Neuralink, and The
@@ -238,7 +240,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-0">Jeff Bezos</h5>
                 <div class="badges mb-2">
-                    <span class="badge text-bg-warning">Amazon</span>
+                  <span class="badge text-bg-warning">Amazon</span>
                 </div>
                 <p class="card-text">
                   Founder and former CEO of Amazon, the world's largest online
@@ -256,65 +258,109 @@
 
     <!-- Date&Place -->
     <section id="place-time">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-6 p-0">
-                    <img src="assets/images/honolulu.jpeg" alt="Honolulu island" class="img-fluid">
-                </div>
-                <div class="col-12 col-lg-6 bg-dark text-white p-4 d-flex align-items-center">
-                    <div>
-                        <h2>Honolulu - October 2023</h2>
-                        <p>Honolulu, Hawaii is the perfect destination for TheConf event. Attendees can enjoy stunning beaches, cultural attractions, delicious cuisine, outdoor adventures, and the warm hospitality of the local people. This vibrant city on the island of <abbr title="Hawaii's most populous island" data-bs-toggle="tooltip">Oahu</abbr> is the ideal backdrop for a transformative experience that will leave attendees inspired and energized.</p>
-                        <a href="https://www.gohawaii.com/" target="_blank" class="btn btn-outline-light">Know more</a>
-                    </div>
-                </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 p-0">
+            <img
+              src="assets/images/honolulu.jpeg"
+              alt="Honolulu island"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-12 col-lg-6 bg-dark text-white p-4 d-flex align-items-center"
+          >
+            <div>
+              <h2>Honolulu - October 2023</h2>
+              <p>
+                Honolulu, Hawaii is the perfect destination for TheConf event.
+                Attendees can enjoy stunning beaches, cultural attractions,
+                delicious cuisine, outdoor adventures, and the warm hospitality
+                of the local people. This vibrant city on the island of
+                <abbr
+                  title="Hawaii's most populous island"
+                  data-bs-toggle="tooltip"
+                  >Oahu</abbr
+                >
+                is the ideal backdrop for a transformative experience that will
+                leave attendees inspired and energized.
+              </p>
+              <a
+                href="https://www.gohawaii.com/"
+                target="_blank"
+                class="btn btn-outline-light"
+                >Know more</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- /Date&Place -->
 
     <!-- JoinSpeaker -->
     <section id="join-speaker" class="pt-4 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col text-uppercase text-center">
-                    <small>Become a</small>
-                    <h2>Speaker</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <p>We would be honored to have you as a speaker at TheConf. Tell us what would you like to give a speech about!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-                    <form>
-                        <div class="form-grid">
-                            <div class="row">
-                                <div class="form-label col-12 col-md-6">
-                                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                                </div>
-                                <div class="form-label col-12 col-md-6">
-                                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <textarea name="text" class="form-control" placeholder="Topic of your presentation"></textarea>
-                                    <small class="form-text text-muted">Remember to include a title!</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col d-grid">
-                                    <button type="button" class="btn btn-tickets">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Become a</small>
+            <h2>Speaker</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>
+              We would be honored to have you as a speaker at TheConf. Tell us
+              what would you like to give a speech about!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <form>
+              <div class="form-grid">
+                <div class="row">
+                  <div class="form-label col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First name"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="form-label col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last name"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <textarea
+                      name="text"
+                      class="form-control"
+                      placeholder="Summary of your presentation"
+                    ></textarea>
+                    <small class="form-text text-muted"
+                      >Remember to include a title!</small
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-grid">
+                    <button type="button" class="btn btn-tickets">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /JoinSpeaker -->
 

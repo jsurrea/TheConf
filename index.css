@@ -5,6 +5,7 @@
 .btn-tickets {
     background-color: #71dab2;
     border-color: white;
+    color: white;
 }
 .btn-tickets:hover {
     color: black;
