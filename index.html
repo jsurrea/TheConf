@@ -261,15 +261,62 @@
                 <div class="col-12 col-lg-6 p-0">
                     <img src="assets/images/honolulu.jpeg" alt="Honolulu island" class="img-fluid">
                 </div>
-                <div class="col-12 col-lg-6 bg-dark text-white p-4">
-                    <h2>Honolulu - October 2023</h2>
-                    <p>Honolulu, Hawaii is the perfect destination for TheConf event. Attendees can enjoy stunning beaches, cultural attractions, delicious cuisine, outdoor adventures, and the warm hospitality of the local people. This vibrant city on the island of Oahu is the ideal backdrop for a transformative experience that will leave attendees inspired and energized.</p>
-                    <a href="https://www.gohawaii.com/" target="_blank" class="btn btn-outline-light">Know more</a>
+                <div class="col-12 col-lg-6 bg-dark text-white p-4 d-flex align-items-center">
+                    <div>
+                        <h2>Honolulu - October 2023</h2>
+                        <p>Honolulu, Hawaii is the perfect destination for TheConf event. Attendees can enjoy stunning beaches, cultural attractions, delicious cuisine, outdoor adventures, and the warm hospitality of the local people. This vibrant city on the island of <abbr title="Hawaii's most populous island" data-bs-toggle="tooltip">Oahu</abbr> is the ideal backdrop for a transformative experience that will leave attendees inspired and energized.</p>
+                        <a href="https://www.gohawaii.com/" target="_blank" class="btn btn-outline-light">Know more</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- /Date&Place -->
+
+    <!-- JoinSpeaker -->
+    <section id="join-speaker" class="pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-uppercase text-center">
+                    <small>Become a</small>
+                    <h2>Speaker</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p>We would be honored to have you as a speaker at TheConf. Tell us what would you like to give a speech about!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+                    <form>
+                        <div class="form-grid">
+                            <div class="row">
+                                <div class="form-label col-12 col-md-6">
+                                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                </div>
+                                <div class="form-label col-12 col-md-6">
+                                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea name="text" class="form-control" placeholder="Topic of your presentation"></textarea>
+                                    <small class="form-text text-muted">Remember to include a title!</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <button type="button" class="btn btn-tickets">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /JoinSpeaker -->
 
     <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
@@ -306,5 +353,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
